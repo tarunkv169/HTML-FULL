@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(structures tags) tables(13)</title>
+</head>
+<body>
+
+    <!-- to draw the whole table u can use a single exp also not only in this u can use everywhere
+      for thead = exp is table>thead>(tr>th*3)*1 
+      for tbody = exp is table>tbody>(tr>td*3)*3 
+    
+      for both                    table>(thead>tr>th*3)+tbody>(tr>td*3)*4         -->
+
+    <!-- 13. <table>  -->
+    <h3>drawing a html table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>EMPLOYE ID</th>
+                <th>EMPLOYE ROLE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>tarun</td>
+                <td>300</td>
+                <td>programmer</td>
+            </tr>
+            <tr>
+                <td>parm</td>
+                <td>400</td>
+                <td>androiddeveloper</td>
+            </tr>
+            <tr>
+                <td>narinder</td>
+                <td>500</td>
+                <td>webdeveloper</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <!--           how to use border, rowspan, column span diff examples -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>column1</th>
+                <th>column2</th>
+                <th>column3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">row1 cell1</td>
+                <td>row1 cell2</td>
+                <td>row1 cell3</td>
+            </tr>
+            <tr>
+                
+                <td>row2 cell2</td>
+                <td>row2 cell3</td>
+            </tr>
+            <tr>
+                <td colspan="3">row3 cell1</td>
+            </tr>
+        </tbody>
+      </table>
+
+
+
+      <table border="1">
+        <thead>
+            <tr>
+                <th>NO.</th>
+                <th>FULL NAME</th>
+                <th>POSITION</th>
+                <th>SALARY</th>
+                <th>TYPE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>BILL GATES</td>
+                <td>founder of Microsoft</td>
+                <td>&dollar;1000</td>
+                <td rowspan="4">company founder</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Steve jobs</td>
+                <td>founder of Apple</td>
+                <td>&dollar;1200</td>
+            
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Lary page</td>
+                <td>founder of Google</td>
+                <td>&dollar;1100</td>
+                
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mark Zukerburg</td>
+                <td>founder of facebook</td>
+                <td>&dollar;1200</td>
+                
+            </tr>
+            <tr>
+                <td colspan="3">Total Expense</td>
+                <td>&dollar;4600</td>
+            </tr>
+        </tbody>
+      </table>
+
+
+
+      <!--                here is a twist of managechanging rowsize ( here we have to leave trs upto our first trsize) -->
+      <table border="2">
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>State</th>
+                <th>City</th>
+                <th>Street</th>
+                <th>Male</th>
+                <th>Female</th>
+                <th>Others</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="8">INDIA</td>
+                <td rowspan="4">punjab</td>
+                <td rowspan="2">sunam</td>
+                <td>new</td>
+                <td>500</td>
+                <td>600</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                
+                
+                
+                <td>ajeet</td>
+                <td>300</td>
+                <td>400</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                
+                <td rowspan="2">budhlada</td>
+                <td>sunciy</td>
+                <td>1200</td>
+                <td>800</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                
+                
+                <td>rrr</td>
+                <td>200</td>
+                <td>100</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td rowspan="4">rajasthan</td>
+                <td rowspan="2">hwali</td>
+                <td>handa</td>
+                <td>400</td>
+                <td>250</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                
+                <td>toe</td>
+                <td>47</td>
+                <td>899</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td rowspan="2">sangrur</td>
+                <td>ubero</td>
+                <td>300</td>
+                <td>299</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                
+                <td>happyt</td>
+                <td>345</td>
+                <td>2000</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td rowspan="2">AUSTRALIA</td>
+                <td rowspan="2">assam</td>
+                <td rowspan="2">barnala</td>
+                <td>hellt</td>
+                <td>875</td>
+                <td>45</td>
+                <td>no</td>
+            </tr>
+            <tr>
+                
+                <td>heaven</td>
+                <td>489</td>
+                <td>777</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+      </table>
+
+
+
+      <!--                  dont keep empty tds -->
+      <table border="2">
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="4">seminar</th>
+              
+            </tr>
+            <tr>
+                <th colspan="2">schedule</th>
+                <th rowspan="2">topic</th>
+                
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 a.m.</td>
+                <td rowspan="2">5:00 a.m.</td>
+                <td>introduction to Xml</td>
+            </tr>
+            <tr>
+                <td>validity DTD and relax</td>
+                <!-- <td></td>
+                <td></td>
+                <td></td> -->
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8:00 a.m</td>
+                <td>11:00 a.m</td>
+                <td rowspan="1">xpath</td>
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td>11:00 a.m</td>
+                <td>2:00 p.m</td>
+                <td>xml design</td>
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td>2:00 p.m</td>
+                <td>5:00 p.m</td>
+                <td rowspan="1">xsl transformation</td>
+            </tr>
+            <tr>
+                <td>wednesday</td>
+                <td>8:00 a.m</td>
+                <td>12:00 a.m</td>
+                <td>xsl formating</td>
+            </tr>
+            <!-- <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr> -->
+        </tbody>
+      </table>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(structure tags) forms(14)</title>
+</head>
+<body>
+    <!-- 14. <form>   -->
+    <h2>this is html forms making tutorial</h2>
+    <br>
+     <form action="backend.php">     <!--all data is go to the backend -->
+        <!-- <label for="name"></label>   for highlightning the selected(put id  like name id of name below) -->
+        <div>                <!--instead of using<br>we prefer to use<div>-->
+            <strong>NAME : </strong><input type="text" name="myName"  id="name">
+       </div>
+       
+       <br>
+       <label for="ROLE"></label>
+       <div>
+           <strong>ROLE : </strong><input type="ROLE" name="myRole"  id="ROLE">
+       </div>
+
+       <br>
+       <label for="email"></label>
+       <div>
+           <strong>EMAIL : </strong><input type="email" name="myemail"  id="email">
+       </div>
+
+       <br>
+       <label for="date"></label>
+       <div>
+           <strong>DATE : </strong><input type="date" name="mydate"  id="date">
+       </div>
+
+       <br>
+       <label for="bonus"></label>
+       <div>
+           <strong>BONUS : </strong><input type="bonus" name="mybonus"  id="bonus">
+       </div>
+
+       <br>
+       <label for="eligibility"></label>
+       <div>
+           <strong>ARE YOU ELIGIBILE : </strong><input type="checkbox" name="mycheckbox" id="eligibility">
+       </div>
+
+       <br>
+       <label for="male female"></label>
+       <div>
+           <strong>Gender : </strong>  Male<input type="radio" name="myGender" >
+                    female <input type="radio" name="myGender">
+                    other <input type="radio" name="myGender">
+       </div>
+
+       <br> 
+       <label for="textarea"></label>
+       <div>
+          <strong>WRITE ABOUT YOURSELF : </strong> 
+          <br>
+          <textarea name="mytextarea" id="textarea" cols="30" rows="10"></textarea>
+       </div>
+
+       <br>
+       <div>
+          <label for="car"><strong>Car : </strong></label>
+          <select name="mycar" id="car">
+            <option value="MERCEDES">MERCEDES</option>
+            <option value="AUDI">AUDI</option>
+            <option value="BREEZA">BREEZA</option>                          
+            <option value="CRETA">CRETA</option>
+          </select>
+       </div>
+        <br>
+       <details>
+        <div> hello guys,HOW are you.
+             whats going on hare ram hare ram ram ram hare hare. 
+             hare krishan hare krishan krishan krishan hare hare.
+              hare krishan hare krishan krishan krishan hare hare.
+            </div>
+    </details>
+       <br>
+       <label for="submit"></label>
+       <label for="reset"></label>
+       <div>
+          <input type="submit" name="mysubmit" id="submit">
+          <input type="reset" name="myreset" id="reset">
+       </div>
+
+       
+    </form>
+
+    <br>
+
+    <h2>this form from learing form codehelp</h2>
+    <!--                        the best form ever     -->
+    <form action="backend.php">
+        <fieldset>
+            <legend><strong>Enter your details:</strong></legend>
+            <br>
+
+            <div>
+                <label for="username"><strong>NAME: </strong></label>
+                <input type="text" name="username" id="username" placeholder="enter your name here......">
+            </div>
+            <br>
+            <div>
+                <label for="rollno"><strong>ROLL NO: </strong></label>
+                <input type="number" name="rollno" id="rollno" placeholder="enter your rollno here......">
+            </div>
+            <br>
+               <div>
+                <label for="DOB"><strong>DATE OF BIRTH: </strong></label>
+                <input type="date" name="DOB" id="DOB">
+            </div>
+            <br>
+               <div>
+                <label for="branch"><strong>BRANCH: </strong></label>
+                <input type="text" name="branch" id="branch" placeholder="enter your branch here......">
+            </div>
+            <br>
+            <div>
+                <label for="semester"><strong>SEMESTER: </strong></label>
+                <input type="number" name="semester" id="semester" placeholder="enter your semester here......">
+            </div>
+            <br>
+            <div>
+                <label for="email"><strong>EMAIL ID: </strong></label>
+                <input type="email" name="email" id="email" placeholder="xxxxxx674@gmail.com....">
+            </div>
+            <br>
+            <div>
+                <label for="password"><strong>PASSWORD: </strong></label>
+                <input type="password" name="password" id="password" placeholder="12345678.....">
+            </div>
+            <br>
+            <div>
+                <strong>GENDER: </strong>
+    
+                <input type="radio" name="gender" id="male">
+                <label for="male">MALE</label>
+    
+                <input type="radio" name="gender" id="female">
+                <label for="female">FEMALE</label>
+    
+                <input type="radio" name="gender" id="others">
+                <label for="others">OTHERS</label>
+            </div>
+            <br>
+    
+            <div>
+                <label for="eligible"><strong>ARE U ELIGIBILE: </strong></label>
+                <input type="checkbox" name="eligible" id="eligible" placeholder="12345678.....">
+            </div>
+            <br>
+
+            <div>
+                <label for="choose"><strong>choose file: </strong></label>
+                <input type="file" name="file_to_review" id="choose">
+            </div>
+
+            <br>
+            <div>
+                <input type="submit" value="SUBMIT" > 
+                <input type="reset" value="RESET">
+            </div>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><strong><strong>TELL ABOUT YOURSELF</strong></strong></legend>
+            <br>
+            
+        <div>
+            <label for="cars"><strong>FAVOURITE CAR</strong></label>
+            <select name="favourite car" id="cars">
+                <option value="mercedes">MERCEDES</option>
+                <option value="i20">I20</option>
+                <option value="audi">AUDI</option>
+                <option value="challenger">CHALENGER</option>
+                <option value="mustang">MUSTANG</option>
+            </select>
+        </div>
+
+            <br>
+
+        <div>
+            <label for="specialities"><strong>YOURS SPECIALITIES</strong></label>
+            <select name="study" id="specialities" multiple>
+                <option value="webdeveloper">WEB_DEVELOPER</option>
+                <option value="appdeveloper">APP_DEVELOPER</option>
+                <option value="dsa_in_c">DSA_IN_C</option>
+                <option value="java">JAVA</option>
+                <option value="python">PYTHON</option>
+            </select>
+        </div>  
+
+            <br>
+
+        <div>
+            <label for="test"><strong>GIVE A GOOD COMMENT</strong></label>
+            <br>
+            <textarea name="testing_skill" id="test" rows="10" cols="30"  placeholder="what is special in an engineer....."></textarea>
+        </div>
+
+            <br>
+
+        <div>
+            <details>
+                <pre>
+                    hare ram
+                    hare ram
+                    hare ram
+                </pre>
+            </details>
+        </div>  
+
+            <br>
+          
+            <button>SUBMIT</button>
+
+            <!-- u can use a img as a button also -->
+            <br>
+
+            <input type="image" name="done" id="done" alt="done" src="tut8.jpeg" height="50px" width="100px">
+           
+
+
+        </fieldset>
+        
+    </form>
+</body>
+</html>
